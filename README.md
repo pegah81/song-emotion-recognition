@@ -10,7 +10,7 @@ This project combines music and facial expression analysis to create a personali
    * Convolutional Neural Networks (CNNs): Used to extract features from spectrograms for emotion classification.
    * CNN + LSTM Hybrid: Combines spatial feature extraction with temporal dependencies to better understand the emotional dynamics of songs.
 
-<img src="https://github.com/user-attachments/assets/39cfbe4d-5416-4363-825d-cbbc2eeb967b" width="900" height="300"/>
+<img src="https://github.com/user-attachments/assets/39cfbe4d-5416-4363-825d-cbbc2eeb967b" width="700" height="100"/>
 
  ### Face Emotion Recognition (FER)
   * Dataset: We use the Cohn-Kanade Dataset (CK+) for training facial emotion models.
