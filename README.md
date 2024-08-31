@@ -38,7 +38,7 @@ emotion with the highest score as one and the rest as zeros. For a more nuanced 
 system, we introduced a threshold, converting scores above it to one. We set the threshold at
 100 divided by the length of the vector for this purpose.
 
-  <img src="https://github.com/user-attachments/assets/f78dfab0-aaee-48ea-bd4c-6b3d192a7378" width="400" height="200" alt="Centered Image"/>
+  <img src="https://github.com/user-attachments/assets/f78dfab0-aaee-48ea-bd4c-6b3d192a7378" width="600" height="300" alt="Centered Image"/>
 
 
 
