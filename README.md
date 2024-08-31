@@ -5,7 +5,7 @@ This project combines music and facial expression analysis to create a personali
 ### Music Emotion Recognition (MER)
   * Audio Features: We analyze pitch, frequency, and amplitude to understand the emotional tone of music. These features are used to 
     construct spectrograms and mel-spectrograms, which serve as inputs for our deep learning models.
-
+<img src="https://github.com/user-attachments/assets/894979c8-a268-45f9-a020-eb59ceec5b66" width="300" height="200"/>
   * Deep Learning Models:
    * Convolutional Neural Networks (CNNs): Used to extract features from spectrograms for emotion classification.
    * CNN + LSTM Hybrid: Combines spatial feature extraction with temporal dependencies to better understand the emotional dynamics of songs.
