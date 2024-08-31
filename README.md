@@ -1,44 +1,22 @@
-### Song Recommendation Based on Facial Expression
+### Audio-Visual Emotion-Based Music Recommendation System
+#### Abstract
 This project combines music and facial expression analysis to create a personalized experience. Using the DEAM dataset, we apply machine learning to predict emotions from audio and facial features, developing a recommendation engine that syncs songs with the user's emotions for an immersive experience.
 
-#### Music Emotion Recognition (MER) 
-Analyzing emotions from pitch, frequency, and amplitude in audio involves understanding
-how these features contribute to the overall emotional tone of music. The pitch, whether high
-or low, can convey feelings of excitement or calmness. Frequency distribution, spanning from
-low bass to high treble, influences the emotional depth and brightness of a piece. Amplitude,
-indicating loudness or softness, contributes to the intensity or subtlety perceived in the music.
-By examining changes and patterns in these features, one can discern the emotional dynamics
-of a song. Integrating machine learning techniques and training models on annotated
-emotional data enables the extraction of emotional cues from audio signals.
-Our dataset has 4 target values for each song, the mean_valence, mean_arousal, std_arousal,
-and std_valence.
+* Music Emotion Recognition (MER)
+  * Audio Features: We analyze pitch, frequency, and amplitude to understand the emotional tone of music. These features are used to 
+    construct spectrograms and mel-spectrograms, which serve as inputs for our deep learning models.
 
-Valence refers to the pleasantness or unpleasantness of an emotion. Emotions can be classified
-on a scale from positive to negative valence. For example, joy and love are considered positive
-valence emotions, while anger and sadness are negative valence emotions.
-Arousal refers to the level of physiological activation or intensity associated with an emotion.
-Emotions can range from low arousal (calm or relaxed) to high arousal (excited or agitated).
-For instance, calmness and contentment are low-arousal emotions, while fear and excitement
-are high-arousal emotions.
+  * Deep Learning Models:
 
-<div style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/c96faac7-de1a-4242-9416-132025b76ddc" width="400" height="300" alt="Centered Image"/>
-</div>
-
-We approach the allocation of emotions to a 10x10 square from two perspectives. In the first
-perspective, we partition the square into 16 smaller squares by introducing four horizontal and
-four vertical lines. The central four mini-squares are assigned to the neutral class. Alternatively, the second perspective involves dividing the main square into eight sections using one vertical line, one horizontal line, and two diagonals. To attribute emotions to each song, we undertook the task of quantifying the contribution of
-specific segments within the arousal and valence ranges. By determining the percentage of the
-entire area covered by these segments, we assigned corresponding percentages to each
-emotion, resulting in a vector of emotions with scores ranging from zero to 100. The
-cumulative sum of all emotion scores equals 100.
-To facilitate the application of classification models, we converted this emotion vector into a
-binary format using various methods. A straightforward approach involves designating the
-emotion with the highest score as one and the rest as zeros. For a more nuanced labeling
-system, we introduced a threshold, converting scores above it to one. We set the threshold at
-100 divided by the length of the vector for this purpose.
-
-  <img src="https://github.com/user-attachments/assets/f78dfab0-aaee-48ea-bd4c-6b3d192a7378" width="600" height="300" alt="Centered Image"/>
+  * Convolutional Neural Networks (CNNs): Used to extract features from spectrograms for emotion classification.
+  * CNN + LSTM Hybrid: Combines spatial feature extraction with temporal dependencies to better understand the emotional dynamics of songs.
+    
+* Face Emotion Recognition (FER)
+  Dataset: We use the Cohn-Kanade Dataset (CK+) for training facial emotion models.
+  
+ * Model Architecture: A CNN model is designed to classify seven basic emotions (anger, disgust, fear, happiness, sadness, surprise,   neutral) using real-time facial images extracted from video frames.
+  
+ * Real-Time Processing: The OpenCV library with Haar Cascade classifiers is employed for real-time face detection and emotion classification.
 
 
 
