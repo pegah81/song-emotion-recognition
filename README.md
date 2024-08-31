@@ -11,8 +11,8 @@ This project combines music and facial expression analysis to create a personali
 
 
   * Deep Learning Models:
-   * Convolutional Neural Networks (CNNs): Used to extract features from spectrograms for emotion classification.
-   * CNN + LSTM Hybrid: Combines spatial feature extraction with temporal dependencies to better understand the emotional dynamics of songs.
+    * Convolutional Neural Networks (CNNs): Used to extract features from spectrograms for emotion classification.
+    * CNN + LSTM Hybrid: Combines spatial feature extraction with temporal dependencies to better understand the emotional dynamics of songs.
 
 
 <img src="https://github.com/user-attachments/assets/39cfbe4d-5416-4363-825d-cbbc2eeb967b" width="700" height="150"/>
@@ -29,8 +29,8 @@ This project combines music and facial expression analysis to create a personali
   * Integration: The final system integrates FER and MER. It uses real-time facial emotion data to recommend songs that match the user's current emotional state.
   
   * Methodology:
-   * Observation Phase: The system monitors facial expressions for 15 seconds, quantifying emotions expressed during this period.
-   * Recommendation Phase: Using cosine similarity, the system calculates the similarity between observed facial emotion vectors and song emotion vectors, recommending the top 5 matching songs.
+    * Observation Phase: The system monitors facial expressions for 15 seconds, quantifying emotions expressed during this period.
+    * Recommendation Phase: Using cosine similarity, the system calculates the similarity between observed facial emotion vectors and song emotion vectors, recommending the top 5 matching songs.
 ### Results
  * MER Results: The use of mel-spectrograms with a simpler CNN model provided the best performance for emotion classification, achieving a F1 score of 0.59.
  
