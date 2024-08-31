@@ -25,5 +25,20 @@ are high-arousal emotions.
   <img src="https://github.com/user-attachments/assets/c96faac7-de1a-4242-9416-132025b76ddc" width="400" height="300" alt="Centered Image"/>
 </div>
 
+We approach the allocation of emotions to a 10x10 square from two perspectives. In the first
+perspective, we partition the square into 16 smaller squares by introducing four horizontal and
+four vertical lines. The central four mini-squares are assigned to the neutral class. Alternatively, the second perspective involves dividing the main square into eight sections using one vertical line, one horizontal line, and two diagonals. To attribute emotions to each song, we undertook the task of quantifying the contribution of
+specific segments within the arousal and valence ranges. By determining the percentage of the
+entire area covered by these segments, we assigned corresponding percentages to each
+emotion, resulting in a vector of emotions with scores ranging from zero to 100. The
+cumulative sum of all emotion scores equals 100.
+To facilitate the application of classification models, we converted this emotion vector into a
+binary format using various methods. A straightforward approach involves designating the
+emotion with the highest score as one and the rest as zeros. For a more nuanced labeling
+system, we introduced a threshold, converting scores above it to one. We set the threshold at
+100 divided by the length of the vector for this purpose.
+
+  <img src="[https://github.com/user-attachments/assets/c96faac7-de1a-4242-9416-132025b76ddc](https://github.com/user-attachments/assets/f78dfab0-aaee-48ea-bd4c-6b3d192a7378)" width="400" height="300" alt="Centered Image"/>
+
 
 
