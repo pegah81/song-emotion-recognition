@@ -21,7 +21,7 @@ Emotions can range from low arousal (calm or relaxed) to high arousal (excited o
 For instance, calmness and contentment are low-arousal emotions, while fear and excitement
 are high-arousal emotions.
 
-<img src="![Screenshot 2024-08-31 155342](https://github.com/user-attachments/assets/c96faac7-de1a-4242-9416-132025b76ddc)" width="100" height="100"/>
+<img src="https://github.com/user-attachments/assets/c96faac7-de1a-4242-9416-132025b76ddc" width="100" height="100"/>
 
 
 
