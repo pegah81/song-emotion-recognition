@@ -18,7 +18,7 @@ This project combines music and facial expression analysis to create a personali
 <img src="https://github.com/user-attachments/assets/39cfbe4d-5416-4363-825d-cbbc2eeb967b" width="700" height="150"/>
 
 
- ### Face Emotion Recognition (FER)
+ ### Face Emotion Recognition (FER)/
   * Dataset: We use the Cohn-Kanade Dataset (CK+) for training facial emotion models.
   
   * Model Architecture: A CNN model is designed to classify seven basic emotions (anger, disgust, fear, happiness, sadness, surprise,   neutral) using real-time facial images extracted from video frames.
